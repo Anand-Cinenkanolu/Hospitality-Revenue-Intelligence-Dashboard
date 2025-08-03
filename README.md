@@ -1,4 +1,4 @@
-# 🏨 AtliQ Grand Hospitality Revenue Analytics
+# 🏨 AtliQ Grand Hotel's Comprehensive Analysis
 
 📊 **Data-Driven Insights for Strategic Hotel Revenue Optimization**
 
@@ -8,7 +8,7 @@
 
 AtliQ Grand, a luxury hotel chain in India, faced revenue dips and high cancellations across its properties. This project builds an interactive Power BI dashboard to uncover insights into booking trends, room performance, cancellation impact, and strategic revenue metrics — designed to support better pricing, marketing, and occupancy decisions.
 
-🔗 **Live Power BI Dashboard**: [View Report](https://app.powerbi.com/reportEmbed?reportId=ef3d4a24-98cf-46e4-a476-3f49fc786500&autoAuth=true&ctid=c6e549b3-5f45-4032-aae9-d4244dc5b2c4)
+🔗 **Live Power BI Dashboard**: [View Report](https://app.powerbi.com/view?r=eyJrIjoiZjljZTM3ZDItNDI1Ni00MTNhLTk1ZDQtYzUwYTVlZjRhZmEzIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9)
 
 
 ---
