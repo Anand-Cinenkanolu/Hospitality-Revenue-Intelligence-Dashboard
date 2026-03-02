@@ -6,12 +6,68 @@
 
 ## 📌 Project Overview
 
-AtliQ Grand, a luxury hotel chain in India, faced revenue dips and high cancellations across its properties. This project builds an interactive Power BI dashboard to uncover insights into booking trends, room performance, cancellation impact, and strategic revenue metrics — designed to support better pricing, marketing, and occupancy decisions.
-
-🔗 **Live Power BI Dashboard**: [View Report](https://app.powerbi.com/view?r=eyJrIjoiMjNmNGIwMDMtZDk5ZS00NDVhLTk3NzEtYWNiNDYyYjFiOWMyIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9)
-
+AtliQ Grands is a 20-year-old luxury hotel chain operating across 4 major Indian cities. Facing pressure from competitors and declining revenue, the managing director decided to adopt business intelligence to recover market share. With no in-house analytics team, a third-party analyst was brought in to deliver insights from historical booking data.
 
 ---
+
+## 🎯 Objective
+
+Analyze 130,000+ hotel booking records and build an executive-ready Power BI dashboard that tracks key hospitality KPIs, identifies revenue opportunities, and supports strategic pricing and performance decisions.
+
+---
+
+## 💡 Key Business Insights
+
+- **Mumbai leads all cities** with ₹660M in revenue, making it the most critical strategic market
+- **AtliQ Exotica Mumbai** is the top-performing property at ₹210M, outperforming all other hotels
+- **Weekend occupancy (62.6%)** outperforms **weekday occupancy (55.8%)** — a 6.8% gap that directly supports dynamic pricing strategy
+- **Third-party platforms** (Others + MakeMyTrip) drive 60%+ of total bookings at ₹690M and ₹337M respectively, exposing a direct channel dependency risk
+- **AtliQ Blu** leads occupancy performance at **66.19%**, reflecting strong capacity utilization
+- **Realization rate** holds at **70.14%** across all platforms, with Logtrip and Journey delivering the highest booking quality
+- **₹298M lost to cancellations** — Elite rooms show the highest cancellation rate, signaling a need for policy revision
+
+---
+
+## 📂 Dataset Overview
+
+| File | Type | Description |
+|------|------|-------------|
+| dim_hotels | Dimension | Hotel name, city, category |
+| dim_rooms | Dimension | Room class and type |
+| dim_date | Dimension | Date, week number, day type |
+| fact_bookings | Fact | All booking transactions |
+| fact_aggregated_bookings | Fact | Aggregated room availability and utilization |
+
+- **Total Records:** 130,000+
+- **Source:** Codebasics Resume Challenge
+- **Format:** CSV files loaded into Power BI
+
+---
+
+## 🧮 Key Metrics Built
+
+| Metric | Formula |
+|--------|---------|
+| **RevPAR** | Total Revenue / Total Available Rooms |
+| **ADR** | Total Room Revenue / Number of Rooms Sold |
+| **Occupancy %** | Occupied Rooms / Total Available Rooms |
+| **Realization %** | Revenue Realized / Revenue Generated |
+| **DSRN** | Daily Sellable Room Nights |
+| **DBRN** | Daily Booked Room Nights |
+| **DURN** | Daily Utilized Room Nights |
+
+---
+
+## 🛠️ Tools & Techniques
+
+- **Power BI Desktop** — Report design and DAX development
+- **Power Query** — Data cleaning, transformation, and normalization
+- **DAX** — Calculated columns, measures, time intelligence functions
+- **Data Modeling** — Snowflake schema with fact and dimension tables
+- **Power BI Service** — Live deployment and stakeholder sharing
+
+---
+
 
 ## 💡 Key Business Insights
 
@@ -38,7 +94,7 @@ Over **20 custom DAX measures** including:
 
 ---
 
-### 🧑‍🏫 How to Use This Dashboard
+### 👨🏻‍💼 How to Use This Dashboard
 - **Whether you're a stakeholder, analyst, or manager, this dashboard is designed to make exploration intuitive.
 
 Here’s how you can navigate and interact with it:
@@ -57,26 +113,27 @@ Here’s how you can navigate and interact with it:
 
 Quick snapshot of business health across all hotel properties:
 
-- **Top KPIs** at a glance: Revenue, RevPAR, DSRN, Occupancy %, ADR, and Realization %
-- **Category revenue breakdown**: Business vs Luxury segments
-- **Weekly key metric trends** (RevPAR, ADR, Occupancy %) to spot seasonal performance changes
-- **Realization % vs ADR by platform** – see which OTA is bringing in both volume and profitability
-- **Property leaderboard** with detailed KPIs: Revenue, RevPAR, Occupancy %, ADR, Booking Nights, Ratings, and Cancellation %
+A single-page health check for hotel revenue, occupancy, and booking performance across all properties.
 
-This page gives leadership the 360° pulse of hotel performance across all dimensions.
+- **KPI Cards** tracking Revenue, RevPAR, DSRN, Occupancy %, ADR, and Realization % with week-on-week change indicators
+- **Luxury vs Business Revenue Split** showing which category drives more revenue across the portfolio
+- **Weekly Metric Trend** for RevPAR, ADR, and Occupancy % to surface seasonal patterns and performance dips
+- **Platform Efficiency View** comparing Realization % and ADR across booking channels to identify which OTAs bring volume and which bring value
+- **Property Scorecard** ranking all hotels by Revenue, RevPAR, Occupancy %, ADR, Booking Nights, Cancellation %, and Guest Ratings
+
 ![Overview View](https://github.com/Anand-Cinenkanolu/AtliQ-Hotels/blob/main/Files/Dashboard%20images/OverView.jpg)
 
 ---
 
 ### 🏢 Executive View
 
-Designed for deep-dive exploration and insights:
+Built for leadership-level analysis with drill-through capability across cities, properties, and room classes.
 
-- **Decomposition Tree** for hierarchical revenue breakdown by City → Property → Room Class → Category
-- **Treemap of bookings by platform** – visually highlights top-performing OTAs like MakeMyTrip and LogTrip
-- **Revenue by City** – compares property hubs like Mumbai, Bangalore, Delhi, Hyderabad
-- **Occupancy % by day type** – contrast between weekday vs weekend traffic
-- **Revenue Trend by Month** – track monthly growth and revenue curve
+- **Decomposition Tree** breaking revenue hierarchically from City → Property → Room Class → Category, pinpointing exactly where revenue is won or lost
+- **Booking Platform Treemap** visualizing channel contribution at a glance, with MakeMyTrip and Logtrip as top-volume platforms
+- **City Revenue Ranking** comparing Mumbai, Bangalore, Hyderabad, and Delhi to identify key strategic markets
+- **Weekday vs Weekend Occupancy** revealing a 6.8% gap that signals dynamic pricing opportunity
+- **Monthly Revenue Trend** tracking performance curves across May, June, and July with custom visual for pattern recognition
 
 ![Executive View](https://github.com/Anand-Cinenkanolu/AtliQ-Hotels/blob/main/Files/Dashboard%20images/Executive%20View.jpg)
 
@@ -86,69 +143,98 @@ Designed for deep-dive exploration and insights:
 
 ## 🧱 Data Model & Structure
 
-![Data Model](https://github.com/Anand-Cinenkanolu/AtliQ-Hotels/blob/main/Files/Dashboard%20images/Data%20Modeling.png)
-
-### 🔹 Dimension Tables
-
-| Table         | Key Fields                        |
-|---------------|------------------------------------|
-| `Dim_Date`    | date, week, month, day_type       |
-| `Dim_Hotels`  | property_id, city, property_name  |
-| `Dim_Rooms`   | room_id, room_class               |
-| `Dim_Platforms` | platform_id, platform_name      |
-
-### 🔹 Fact Tables
-
-| Table               | Description                                        |
-|---------------------|----------------------------------------------------|
-| `Fact_Bookings`     | Booking details (dates, guests, revenue, room info) |
-| `Fact_Aggregated`   | Daily room capacity and booking success rates       |
-
-📌 Snowflake schema implemented for clean filtering and scalability.  
+📌 Snowflake schema implemented for clean filtering, accurate cross-table calculations, and faster query performance.
 
 ![Data Model](https://github.com/Anand-Cinenkanolu/AtliQ-Hotels/blob/main/Files/Dashboard%20images/Data%20Modeling.png)
 
+### Dimension Tables
+
+| Table | Key Fields |
+|-------|-----------|
+| `Dim_Date` | date, week, month, day_type |
+| `Dim_Hotels` | property_id, city, property_name, category |
+| `Dim_Rooms` | room_id, room_class |
+
+### Fact Tables
+
+| Table | Description |
+|-------|-------------|
+| `Fact_Bookings` | All booking transactions including revenue, room type, platform, and dates |
+| `Fact_Aggregated` | Daily room capacity, sellable nights, and utilization rates |
 
 ---
 
 ## 🔍 Business Recommendations
 
-- Refine cancellation policies — especially for elite rooms  
-- Target OTA partnerships — maximize MakeMyTrip & LogTrip  
-- Revenue drop in last 4 days — plan retention campaigns  
-- Push high-occupancy properties with better pricing strategies  
+- **Revise cancellation policy for Elite rooms** — highest demand but highest cancellation rate, directly impacting ₹298M in lost revenue
+- **Invest in direct booking channels** — over 60% of bookings flow through third-party OTAs, reducing margin and increasing platform dependency
+- **Implement dynamic weekend pricing** — 6.8% occupancy gap between weekends and weekdays is an untapped revenue lever
+- **Focus retention strategy on Mumbai and AtliQ Exotica** — both are the highest revenue contributors and deserve priority resource allocation
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Area             | Tools / Concepts                    |
-|------------------|-------------------------------------|
-| BI Tool          | Power BI (Desktop + Service)        |
-| Modeling         | DAX, Power Query                    |
-| Optimization     | DAX Studio, Bravo for BI            |
-| Data Sources     | Excel, MySQL                        |
-| UX Features      | Bookmarks, Navigation Buttons, Tooltips |
+| Area | Tools / Concepts |
+|------|-----------------|
+| BI Tool | Power BI Desktop + Power BI Service |
+| Data Transformation | Power Query, ETL |
+| Calculations | DAX, Time Intelligence Functions |
+| Data Modeling | Snowflake Schema, Fact & Dimension Tables |
+| UX Features | Conditional Formatting Theme Toggle, Slicers, Bookmarks, KPI Cards |
+| Deployment | Published to Power BI Service for live stakeholder access |
+
+---
+
+## ✨ Special Features
+
+- **Dark / Light Theme Toggle** — Built using native Power BI conditional formatting (no third-party plugin), switching the entire report between dark and light mode based on viewer preference
+- **Live Deployment** — Report published to Power BI Service for interactive, shareable access without requiring desktop software
+- **Role-Based Pages** — Overview page designed for operations teams, Executive View designed for leadership and revenue managers
+
+---
+
+## 🎓 What I Learned
+
+- **Hospitality Domain Knowledge** Gained a solid understanding of revenue KPIs specific to the hotel industry, including how RevPAR, ADR, and realization rate interact to tell the full revenue story
+- **Advanced DAX** — Built dynamic measures for week-over-week trends, day-type segmentation, and platform-level performance comparisons
+- **Data Modeling** — Designed a snowflake schema that made cross-table filtering faster and more reliable across 130,000+ records
+- **UI/UX Thinking** — Went beyond building a functional dashboard to designing one that works for different viewers, including a native dark-light theme toggle built without any external plugin
+- **Stakeholder-First Design** — Structured the report into two distinct views so operations teams and executives each get the level of detail they actually need
+
+---
+
+## 📂 Project Structure
+
+```
+atliq-grand-hotels-analysis/
+│
+├── assets/
+│   ├── Overview.png
+│   └── Executive_View.png
+│
+├── data/
+│   ├── dim_hotels.csv
+│   ├── dim_rooms.csv
+│   ├── dim_date.csv
+│   ├── fact_bookings.csv
+│   └── fact_aggregated_bookings.csv
+│
+├── AtliQ_Hotels_Dashboard.pbix
+└── README.md
+```
 
 ---
 
 🔗 **Live Power BI Dashboard**: [View Report](https://app.powerbi.com/view?r=eyJrIjoiMjNmNGIwMDMtZDk5ZS00NDVhLTk3NzEtYWNiNDYyYjFiOWMyIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9)
 
-## 🎓 What I Learned
-
-- 🏨 **Domain Knowledge** – Gained solid understanding of the **hospitality industry** — from revenue KPIs to how booking behavior impacts business strategy. This was a great opportunity to combine data analysis with real-world business context.
-
-- 💡 **Advanced DAX Skills** – Built dynamic calculations for YoY, WoW trends, and Realization % to uncover meaningful performance shifts.  
-
-- 🔍 **Smart Visuals** – Used **Decomposition Tree** for drill-down analysis, **Sparkline by OKVIZ** to show trendlines, **Smart Filter by OKVIZ**, and an **Advanced Toggle Switch** by TME AG to add interactivity and control.  
-
-- 🎨 **UI/UX Design** – Designed both **Dark and Light Themes** to create a visually pleasing and smooth experience for users, no matter their preference.  
-
 
 ---
 
-## 📣 Contact
+## 📣 Author Contact's 
 
+**Anand Cinenkanolu**
+Aspiring Data Analyst | Power BI Developer
 For queries, collaboration opportunities, or feedback, feel free to reach out:
 
 - 📧 [**Email**](anandcinenkanolu@gmail.com)
@@ -159,4 +245,6 @@ For queries, collaboration opportunities, or feedback, feel free to reach out:
 
 ---
 
+## 📄 License
 
+This project is for educational purposes. Dataset sourced from [Codebasics Resume Challenge](https://codebasics.io/).
