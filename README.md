@@ -1,4 +1,4 @@
-# 🏨 AtliQ Grand Hotel's Comprehensive Analysis
+# 🏨 Grand Hotel's Revenue Recovery Analysis
 
 📊 **Data-Driven Insights for Strategic Hotel Revenue Optimization**
 
