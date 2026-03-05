@@ -60,11 +60,11 @@ Analyze 130,000+ hotel booking records and build an executive-ready Power BI das
 
 ## 🛠️ Tools & Techniques
 
-- **Power BI Desktop** — Report design and DAX development
-- **Power Query** — Data cleaning, transformation, and normalization
-- **DAX** — Calculated columns, measures, time intelligence functions
-- **Data Modeling** — Snowflake schema with fact and dimension tables
-- **Power BI Service** — Live deployment and stakeholder sharing
+- **Power BI Desktop** - Report design and DAX development
+- **Power Query** - Data cleaning, transformation, and normalization
+- **DAX** - Calculated columns, measures, time intelligence functions
+- **Data Modeling** - Snowflake schema with fact and dimension tables
+- **Power BI Service** - Live deployment and stakeholder sharing
 
 ---
 
@@ -166,9 +166,9 @@ Built for leadership-level analysis with drill-through capability across cities,
 
 ## 🔍 Business Recommendations
 
-- **Revise cancellation policy for Elite rooms** — highest demand but highest cancellation rate, directly impacting ₹298M in lost revenue
-- **Invest in direct booking channels** — over 60% of bookings flow through third-party OTAs, reducing margin and increasing platform dependency
-- **Implement dynamic weekend pricing** — 6.8% occupancy gap between weekends and weekdays is an untapped revenue lever
+- **Revise cancellation policy for Elite rooms** - highest demand but highest cancellation rate, directly impacting ₹298M in lost revenue
+- **Invest in direct booking channels** - over 60% of bookings flow through third-party OTAs, reducing margin and increasing platform dependency
+- **Implement dynamic weekend pricing** - 6.8% occupancy gap between weekends and weekdays is an untapped revenue lever
 - **Focus retention strategy on Mumbai and AtliQ Exotica** — both are the highest revenue contributors and deserve priority resource allocation
 
 ---
@@ -188,19 +188,19 @@ Built for leadership-level analysis with drill-through capability across cities,
 
 ## ✨ Special Features
 
-- **Dark / Light Theme Toggle** — Built using native Power BI conditional formatting (no third-party plugin), switching the entire report between dark and light mode based on viewer preference
-- **Live Deployment** — Report published to Power BI Service for interactive, shareable access without requiring desktop software
-- **Role-Based Pages** — Overview page designed for operations teams, Executive View designed for leadership and revenue managers
+- **Dark / Light Theme Toggle** - Built using native Power BI conditional formatting (no third-party plugin), switching the entire report between dark and light mode based on viewer preference
+- **Live Deployment** - Report published to Power BI Service for interactive, shareable access without requiring desktop software
+- **Role-Based Pages** - Overview page designed for operations teams, Executive View designed for leadership and revenue managers
 
 ---
 
 ## 🎓 What I Learned
 
 - **Hospitality Domain Knowledge** Gained a solid understanding of revenue KPIs specific to the hotel industry, including how RevPAR, ADR, and realization rate interact to tell the full revenue story
-- **Advanced DAX** — Built dynamic measures for week-over-week trends, day-type segmentation, and platform-level performance comparisons
-- **Data Modeling** — Designed a snowflake schema that made cross-table filtering faster and more reliable across 130,000+ records
-- **UI/UX Thinking** — Went beyond building a functional dashboard to designing one that works for different viewers, including a native dark-light theme toggle built without any external plugin
-- **Stakeholder-First Design** — Structured the report into two distinct views so operations teams and executives each get the level of detail they actually need
+- **Advanced DAX** - Built dynamic measures for week-over-week trends, day-type segmentation, and platform-level performance comparisons
+- **Data Modeling** - Designed a snowflake schema that made cross-table filtering faster and more reliable across 130,000+ records
+- **UI/UX Thinking** - Went beyond building a functional dashboard to designing one that works for different viewers, including a native dark-light theme toggle built without any external plugin
+- **Stakeholder-First Design** - Structured the report into two distinct views so operations teams and executives each get the level of detail they actually need
 
 ---
 
